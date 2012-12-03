@@ -20,7 +20,7 @@ describe "StaticPages" do
 		it "should not have a custom page page title" do
 
 			visit '/static_pages/home'
-			page.should_not have_selector('title', :text => '| Home')
+			page.should have_selector('title', :text => '| Home')
 		end
 	end
 
